@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: url('/assets/bg.jpg');
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/assets/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 90%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card1 .player1 .info1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0px);
+    -webkit-backdrop-filter: blur( 5px);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    font-size: 2em;
+    color: aliceblue;
+    margin-top: 4em;
+}
+
+.card2 .player2 .info2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0px);
+    -webkit-backdrop-filter: blur( 5px);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    font-size: 2em;
+    color: aliceblue;
+    margin-top: 4em;
+}
+
+.centerArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -5em;
+    font-size: 1.1em;
+}
+
+button {
+    font-size: 1.5em;
+    background: transparent;
+    color: rgb(240, 241, 241);
+    font-weight: bold;
+}
+
+.btn-primary {
+    margin-top: -35em;
+}
+
+#scoreLimit {
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#cheat {
+    background: rgb(38, 107, 7);
+    border: none !important;
+    font-size: 0;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-orientation: mixed;
+    border-radius: 10px;
+    background-image: radial-gradient(circle at 42.63% 39.47%, #ff8994 0, #ff7f9d 8.33%, #ff76a3 16.67%, #ff6da6 25%, #ff63a6 33.33%, #eb5aa2 41.67%, #cc509a 50%, #ae4790 58.33%, #933f87 66.67%, #7b397e 75%, #653577 83.33%, #533170 91.67%, #422f6b 100%);
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        margin-right: 5em;
+    }
+    .container2 {
+        width: 40%;
+        margin-left: -25em;
+    }
+    .container2 .active {
+        width: 60%;
+    }
+    .active {
+        height: 500px;
+        margin-top: 10em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        width: 100%;
+    }
+    #img {
+        width: 20%;
+        height: 20%;
+    }
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+}
