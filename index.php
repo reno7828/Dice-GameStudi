@@ -1,5 +1,5 @@
 <?php
 
-include('../Examen2/index.html');
+include('index.html');
 
 ?>
